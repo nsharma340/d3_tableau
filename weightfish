@@ -1,0 +1,12 @@
+Plot.plot({
+  marks: [
+    Plot.barY(
+      data,
+      Plot.groupX(
+        { y: "mean" },
+        { x: "Species", y: "Weight", fill: "#32529b", r: "Weight", tip: true }
+      )
+    ),
+    Plot.ruleY([0])
+  ]
+})
